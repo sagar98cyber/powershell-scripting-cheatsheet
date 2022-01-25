@@ -38,7 +38,6 @@ Beginning with the basics of the PowerShell
 ``` 
     Get-Date
 ```
-> The Output for the same is [here](./Lecture_1/3_GET-SERVICE.png)<br>
-> Displays details about all the services currently on the system and their state whether they are running or stopped.
-> For Example: [Background Intelligent File Transfer Service](./Lecture_1/4_file_transfer.png) is used for file transfer<br>
+> The Output for the same is [here](./Lecture_1/5_getDate.png)<br>
+> Displays the current Date and Time
 > This is a cmdlet
