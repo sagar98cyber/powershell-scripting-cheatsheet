@@ -54,9 +54,10 @@ Beginning with the basics of the PowerShell
 #### If you have noticed carefully the *Get-ChildItem* cmdlet works exactly like the *'dir'*,*'ls'*.<br> So why we have all the three of them?🤔
 >*Get-ChildItem* is a cmdlet, whereas *'dir'*,*'ls'* are its aliases. Aliases are nothing but the identifier to the cmdlets.<br>
 >We create Aliases for our ease to remember any specific cmdlet with our identifiers.<br>
->We use  *Get-Alias* command to display all the aliases present on the current system.
+>We use  [*Get-Alias*](./Lecture_1/9_GetAllAliases.png) command to display all the aliases present on the current system.
 ``` 
     Get-Alias
 ```
 > The Output for the same is [here](./Lecture_1/7-dir-GetChildItem.png)<br>
-> The output shows o/p of 2 commands the first one is cmdlet and the second is alias 
+> The output shows o/p of 2 commands the first one is cmdlet - *Get-ChildItem* and the second is alias - *dir*.<br>
+> Another comman alias - *cd* is equivalent to *Set-Location*. [Example](./Lecture_1/8_cd-SetLocation.png)
