@@ -54,10 +54,39 @@ Beginning with the basics of the PowerShell
 #### If you have noticed carefully the *Get-ChildItem* cmdlet works exactly like the *'dir'*,*'ls'*.<br> So why we have all the three of them?🤔
 >*Get-ChildItem* is a cmdlet, whereas *'dir'*,*'ls'* are its aliases. Aliases are nothing but the identifier to the cmdlets.<br>
 >We create Aliases for our ease to remember any specific cmdlet with our identifiers.<br>
->We use  [*Get-Alias*](./Lecture_1/9_GetAllAliases.png) command to display all the aliases present on the current system.
+>We use  [*Get-Alias*](./Lecture_1/9_GetAllAliases.png) command to display all the aliases present on the current system.<br>
+>*Get-Alias* is a cmdlet.
 ``` 
     Get-Alias
 ```
 > The Output for the same is [here](./Lecture_1/7-dir-GetChildItem.png)<br>
 > The output shows o/p of 2 commands the first one is cmdlet - *Get-ChildItem* and the second is alias - *dir*.<br>
-> Another comman alias - *cd* is equivalent to *Set-Location*. [Example](./Lecture_1/8_cd-SetLocation.png)
+> Another comman alias - *cd* is equivalent to *Set-Location*. [Example](./Lecture_1/8_cd-SetLocation.png)<br>
+
+``` 
+    Get-Alias < alias-name >
+```
+> Checks if the alias exists, if yes displays the [output](./Lecture_1/9.1_GetAliasforSpecificCommand.png)<br>
+> This is a cmdlet but it gets the info about the alias
+<br>
+
+``` 
+    help < alias-name >
+```
+> Checks if the alias exists, if yes displays the [details](./Lecture_1/10_Help-Aliases-MANPAGE.png) of the alias.<br>
+> This is a cmdlet but it gets the info about the alias
+<br>
+
+``` 
+    new-alias -name < alias-name > -value < corresponding-cmdlet >
+```
+> The above command is used in creating your own alias as per your needs. [Example](./Lecture_1/11_creating_aliases.png) of the alias.<br>
+> This is a cmdlet but it is used to create the alias
+<br>
+
+``` 
+    Remove-Item Alias:< alias-name >
+```
+> The above command is used in removing an alias. [Example](./Lecture_1/12_RemoveAliases.png).<br>
+> This is a cmdlet but it is used to delete the alias
+<br>
