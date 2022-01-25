@@ -9,4 +9,5 @@ Beginning with the basics of the PowerShell
 ``` 
     $PSVersionTable
 ```
-> The Output for the same is [here](./Lecture_1/1_PowerShellVersion.png)
+> The Output for the same is [here](./Lecture_1/1_PowerShellVersion.png)<br>
+> Displays details about the version of PowerShell that is running in the current session.
