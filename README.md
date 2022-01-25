@@ -6,8 +6,15 @@
 ##  Basics of PowerShell Scripting
 Beginning with the basics of the PowerShell
 > The First command that we have is:
+
 ``` 
     $PSVersionTable
 ```
 > The Output for the same is [here](./Lecture_1/1_PowerShellVersion.png)<br>
 > Displays details about the version of PowerShell that is running in the current session.
+
+``` 
+    Get-Process
+```
+> The Output for the same is [here](./Lecture_1/2_Get-Process.png)<br>
+> Displays details about all the processes currently running on the system.
