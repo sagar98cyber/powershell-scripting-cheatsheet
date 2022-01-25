@@ -21,3 +21,24 @@ Beginning with the basics of the PowerShell
 ```
 > The Output for the same is [here](./Lecture_1/2_Get-Process.png)<br>
 > Displays details about all the processes currently running on the system.
+> This is a cmdlet
+
+<br>
+
+``` 
+    Get-Service
+```
+> The Output for the same is [here](./Lecture_1/3_GET-SERVICE.png)<br>
+> Displays details about all the services currently on the system and their state whether they are running or stopped.
+> For Example: [Background Intelligent File Transfer Service](./Lecture_1/4_file_transfer.png) is used for file transfer<br>
+> This is a cmdlet
+
+<br>
+
+``` 
+    Get-Date
+```
+> The Output for the same is [here](./Lecture_1/3_GET-SERVICE.png)<br>
+> Displays details about all the services currently on the system and their state whether they are running or stopped.
+> For Example: [Background Intelligent File Transfer Service](./Lecture_1/4_file_transfer.png) is used for file transfer<br>
+> This is a cmdlet
