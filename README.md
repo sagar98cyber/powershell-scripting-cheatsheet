@@ -9,4 +9,4 @@ Beginning with the basics of the PowerShell
 ``` 
     $PSVersionTable
 ```
-    The Output for the same is [here](./Lecture 1/1_PowerShellVersion.png)
+> The Output for the same is [here](./Lecture 1/1_PowerShellVersion.png)
