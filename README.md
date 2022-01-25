@@ -5,13 +5,12 @@
 
 ##  Basics of PowerShell Scripting
 Beginning with the basics of the PowerShell
-> The First command that we have is:
 <br>
 
 ``` 
     $PSVersionTable
 ```
-> The Output for the same is [here](./Lecture_1/1_PowerShellVersion.png)<br>
+> The First command that we have is: [here](./Lecture_1/1_PowerShellVersion.png)<br>
 > Displays details about the version of PowerShell that is running in the current session.
 
 <br>
@@ -40,4 +39,13 @@ Beginning with the basics of the PowerShell
 ```
 > The Output for the same is [here](./Lecture_1/5_getDate.png)<br>
 > Displays the current Date and Time
+> This is a cmdlet
+
+<br>
+
+``` 
+    Get-ChildItem
+```
+> The Output for the same is [here](./Lecture_1/6_getChildItem.png)<br>
+> Displays all the current files and directories of the current working directory, just like a *'cd'* or a *'ls'* command
 > This is a cmdlet
