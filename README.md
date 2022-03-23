@@ -145,3 +145,7 @@ Get-Service | Select-Object -Property Name,Status,StartType | where-object {$_.N
 
 
 Get-Service BITS | Select StartType
+
+
+
+Write-Host ($list | Where-Object {!($target -match $_)})
