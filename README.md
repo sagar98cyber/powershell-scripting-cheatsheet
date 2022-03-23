@@ -90,3 +90,49 @@ Beginning with the basics of the PowerShell
 > The above command is used in removing an alias. [Example](./Lecture_1/12_RemoveAliases.png).<br>
 > This is a cmdlet but it is used to delete the alias
 <br>
+
+
+set execution policies
+```
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+```
+
+
+Get Execution Policy
+```
+Get-ExecutionPolicy
+```
+
+
+```
+$fName =$args[0]
+$lName = $args[1]
+write-Host "Hello Butch"
+Write-Warning "$fName $lName"
+```
+
+```
+write-host "First write"
+write-host "This is your computer logged in from $env:COMPUTERNAME"
+write-host "Mogambokhush hua"
+Get-ExecutionPolicy
+```
+
+To get a full name or to get the full output we 
+can use
+```
+Get-Service | Format-Table -Wrap
+```
+
+If in place of table we want the same thing as 
+list, then
+```
+Get-Service | Format-List
+```
+
+```
+$varname = get-service -name Bits | select name, status
+write-host $varname
+```
+
+
