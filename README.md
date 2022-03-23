@@ -137,3 +137,8 @@ write-host $varname
 
 
 Get-Service | select -property name,starttype
+
+(get-service|?{ $_.Status -eq "Stopped" -and $_.StartType -eq "Automatic"})|
+select DisplayName, StartType, Status
+
+Get-Service | Select-Object -Property Name,Status,StartType | where-object {$_.Name -eq "MpsSvc"} | Format-Table -auto
