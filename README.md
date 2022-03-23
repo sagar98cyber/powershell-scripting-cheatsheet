@@ -142,3 +142,6 @@ Get-Service | select -property name,starttype
 select DisplayName, StartType, Status
 
 Get-Service | Select-Object -Property Name,Status,StartType | where-object {$_.Name -eq "MpsSvc"} | Format-Table -auto
+
+
+Get-Service BITS | Select StartType
